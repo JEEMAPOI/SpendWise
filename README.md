@@ -1,72 +1,47 @@
-# SpendWise Dashboard
+ # SpendWise
 
-SpendWise is a responsive financial dashboard shell built using HTML and CSS.
+## Smart Money Management Made Simple
+
+SpendWise is a simple personal finance web application that helps users track their monthly budget, record expenses, and calculate their remaining balance.
 
 ## Features
 
-- Responsive dashboard layout
-- Sidebar navigation menu
-- Dashboard header
-- Six financial category cards
-- CSS Grid for the main layout
-- Flexbox for navigation, header, and cards
-- CSS custom properties for the color theme
-- Responsive design below 768px
-- Hover and keyboard focus effects
-- Dark theme using `prefers-color-scheme`
+* Set a monthly budget.
+* Add expenses with a name and price.
+* Display a list of expenses.
+* Automatically calculate the remaining balance.
 
-## Dashboard Sections
+## JavaScript Concepts Used
 
-### Sidebar
-The sidebar contains navigation links for:
+The project demonstrates several JavaScript concepts:
 
-- Dashboard
-- Transactions
-- Budget
-- Savings
-- Settings
+* Variables using `let` and `const`
+* Arrays for storing expenses
+* Objects for storing expense details
+* Functions
+* Event listeners
+* DOM manipulation
+* Conditional statements
+* Loops using `forEach()`
+* Number conversion using `Number()`
 
-### Header
-The header displays the dashboard title, description, date, and account information.
+## Project Files
 
-### Category Cards
+* `index.html` - Contains the structure of the SpendWise application.
+* `style.css` - Provides the styling and layout.
+* `script.js` - Contains the JavaScript functionality.
+* `README.md` - Explains the project and how it works.
 
-The dashboard contains six financial categories:
+## How to Run
 
-- Food
-- Transport
-- Rent
-- Entertainment
-- Savings
-- Utilities
+1. Open the SpendWise project folder.
+2. Open `index.html` in a web browser.
+3. Enter a monthly budget.
+4. Add expenses.
+5. View the remaining balance.
 
-Each card displays realistic static financial information.
+## Example
 
-## CSS Grid
+If the monthly budget is **KES 10,000** and the user adds a **KES 500** food expense, the remaining balance will be:
 
-CSS Grid is used for the overall dashboard layout and the category card layout.
-
-## Flexbox
-
-Flexbox is used for the sidebar navigation, header, user information, and individual cards.
-
-## Responsive Design
-
-The dashboard changes to a single-column layout on screens smaller than 768px.
-
-## Micro-interactions
-
-The cards have hover and keyboard focus effects with a 200ms transition.
-
-## Dark Theme
-
-A dark theme is included using the `prefers-color-scheme: dark` media query.
-
-## Technologies
-
-- HTML5
-- CSS3
-- CSS Grid
-- Flexbox
-- CSS Custom Properties
-- Responsive Design
+**KES 9,500**
