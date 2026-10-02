@@ -1,93 +1,44 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpendWise Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>SpendWise</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="dashboard">
 
-        <aside class="sidebar">
-            <h2>SpendWise</h2>
+    <h1>SpendWise</h1>
 
-            <nav>
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Transactions</a>
-                <a href="#">Budget</a>
-                <a href="#">Savings</a>
-                <a href="#">Settings</a>
-            </nav>
-        </aside>
+    <p>Smart Money Management Made Simple</p>
 
-        <main class="main-content">
+    <p>Track your budget, expenses, and remaining balance.</p>
 
-            <header class="header">
-                <div>
-                    <h1>Dashboard</h1>
-                    <p>Track your spending and manage your money.</p>
-                </div>
+    <h2>Monthly Budget</h2>
 
-                <div class="user-info">
-                    <span>September 2026</span>
-                    <strong>My Account</strong>
-                </div>
-            </header>
+    <input type="number" id="budgetInput" placeholder="Enter your monthly budget">
 
-            <section class="cards">
+    <button id="setBudget">Set Budget</button>
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Food</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>$320</strong>
-                </article>
+    <h2>Add Expense</h2>
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Transport</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>$180</strong>
-                </article>
+    <input type="text" id="expenseName" placeholder="Expense name">
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Rent</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>$850</strong>
-                </article>
+    <input type="number" id="expenseAmount" placeholder="Price">
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Entertainment</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>$120</strong>
-                </article>
+    <button id="addExpense">Add Expense</button>
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Savings</h3>
-                        <p>Monthly contribution</p>
-                    </div>
-                    <strong>$400</strong>
-                </article>
+    <h2>Expenses</h2>
 
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Utilities</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>$150</strong>
-                </article>
+    <ul id="expenseList"></ul>
 
-            </section>
-        </main>
-    </div>
+    <h2>Remaining Balance</h2>
+
+    <p id="remainingBalance">KES 0</p>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
